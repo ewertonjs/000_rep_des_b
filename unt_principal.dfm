@@ -1,7 +1,7 @@
-object Form1: TForm1
+object frm_principal: Tfrm_principal
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Tela principal do exemplo 0'
   ClientHeight = 242
   ClientWidth = 527
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 13
 end
