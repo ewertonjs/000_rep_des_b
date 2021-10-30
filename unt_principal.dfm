@@ -12,6 +12,7 @@ object frm_principal: Tfrm_principal
   Font.Style = []
   OldCreateOrder = False
   WindowState = wsMaximized
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 25
   object lbl_titulo: TLabel
@@ -63,5 +64,6 @@ object frm_principal: Tfrm_principal
     Height = 36
     Caption = 'Acessar o sistema'
     TabOrder = 2
+    OnClick = btn_loginClick
   end
 end

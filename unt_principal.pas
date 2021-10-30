@@ -14,8 +14,12 @@ type
     edt_usuario: TEdit;
     edt_senha: TEdit;
     btn_login: TButton;
+    procedure btn_loginClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
   private
     { Private declarations }
+    usuario: String;
+    senha: Integer;
   public
     { Public declarations }
   end;
@@ -26,5 +30,32 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure Tfrm_principal.btn_loginClick(Sender: TObject);
+var valida : Boolean;
+begin
+  valida := true;
+  if (usuario <> edt_usuario.Text) then
+  begin
+    valida := false;
+    Application.MessageBox('Usuário inválido', 'Erro', MB_ICONERROR);
+  end;
+
+  if (senha <> StrToInt(edt_senha.Text)) then
+  begin
+    valida := false;
+    Application.MessageBox('Senha incorreta', 'Erro', MB_ICONERROR);
+  end;
+
+  if valida = true then
+    Application.MessageBox('Iniciando o aplicativo', 'Acesso', MB_ICONEXCLAMATION);
+
+end;
+
+procedure Tfrm_principal.FormShow(Sender: TObject);
+begin
+  usuario := 'Ewerton';
+  senha := 123;
+end;
 
 end.
