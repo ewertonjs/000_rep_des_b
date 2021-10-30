@@ -9,6 +9,11 @@ uses
 type
   Tfrm_principal = class(TForm)
     lbl_titulo: TLabel;
+    lbl_usu: TLabel;
+    lbl_senha: TLabel;
+    edt_usuario: TEdit;
+    edt_senha: TEdit;
+    btn_login: TButton;
   private
     { Private declarations }
   public
