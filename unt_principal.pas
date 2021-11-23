@@ -49,7 +49,9 @@ begin
   end;
 
   if valida = true then
+  begin
     Application.MessageBox('Iniciando o aplicativo', 'Acesso', MB_ICONEXCLAMATION);
+  end;
 
 end;
 

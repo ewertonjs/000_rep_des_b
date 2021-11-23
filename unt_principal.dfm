@@ -27,8 +27,6 @@ object frm_principal: Tfrm_principal
     Ctl3D = True
     ParentCtl3D = False
     TabOrder = 0
-    ExplicitLeft = 8
-    ExplicitTop = 8
     DesignSize = (
       511
       226)
