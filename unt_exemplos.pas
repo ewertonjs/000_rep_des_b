@@ -10,6 +10,8 @@ type
   Tfrm_exemplos = class(TForm)
     btn_login: TButton;
     btn_repeticao: TButton;
+    procedure btn_repeticaoClick(Sender: TObject);
+    procedure btn_loginClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -22,5 +24,17 @@ var
 implementation
 
 {$R *.dfm}
+
+uses unt_repeticao;
+
+procedure Tfrm_exemplos.btn_loginClick(Sender: TObject);
+begin
+  ShowMessage('oi');
+end;
+
+procedure Tfrm_exemplos.btn_repeticaoClick(Sender: TObject);
+begin
+  frm_repeticao.ShowModal;
+end;
 
 end.

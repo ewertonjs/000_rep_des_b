@@ -20,6 +20,7 @@ object frm_exemplos: Tfrm_exemplos
     Height = 73
     Caption = 'Login'
     TabOrder = 0
+    OnClick = btn_loginClick
   end
   object btn_repeticao: TButton
     Left = 40
@@ -28,5 +29,6 @@ object frm_exemplos: Tfrm_exemplos
     Height = 73
     Caption = 'Repeticao'
     TabOrder = 1
+    OnClick = btn_repeticaoClick
   end
 end

@@ -100,12 +100,16 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="unt_principal.pas">
+        <DCCReference Include="unt_ex_login.pas">
             <Form>frm_principal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="unt_exemplos.pas">
             <Form>frm_exemplos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="unt_repeticao.pas">
+            <Form>frm_repeticao</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
